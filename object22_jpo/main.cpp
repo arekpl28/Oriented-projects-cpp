@@ -143,6 +143,62 @@ ostream &operator<<(ostream &out, VectorOfVectors &right)
   }
   return out;
 }
+//////////////////////////////////////////////
+// const int SIZE = 3;
+
+// class VectorOfVectors
+// {
+// private:
+//   VektorNd _wektory[SIZE];
+//   int _size;
+
+// public:
+//   VectorOfVectors(VektorNd *tablica, int size = SIZE)
+//   {
+//     _size = size;
+//     for (int i = 0; i < SIZE; i++)
+//     {
+//       _wektory[i] = tablica[i];
+//     }
+//   }
+
+//   VectorOfVectors(VectorOfVectors &right)
+//   //: VectorOfVectors(right._wektory, right._size)
+//   {
+//     _size = right._size;
+//     for (int i = 0; i < SIZE; i++)
+//     {
+//       _wektory[i] = right._wektory[i];
+//     }
+//   }
+
+//   VectorOfVectors &operator=(VectorOfVectors &right)
+//   {
+//     _size = right._size;
+//     for (int i = 0; i < SIZE; i++)
+//     {
+//       _wektory[i] = right._wektory[i];
+//     }
+
+//     return *this;
+//   }
+
+//   ~VectorOfVectors()
+//   {
+//     cout << "Destruktor";
+//   }
+
+//   friend ostream &operator<<(ostream &out, VectorOfVectors &right);
+// };
+// ostream &operator<<(ostream &out, VectorOfVectors &right)
+// {
+//   for (int i = 0; i < SIZE; i++)
+//   {
+//     out << right._wektory[i];
+//   }
+//   return out;
+// }
+//////////////////////////////////////////////
 /*
 void wypisz(double tab[], int rozmiar) {
   for (int i = 0; i < rozmiar; i++)
